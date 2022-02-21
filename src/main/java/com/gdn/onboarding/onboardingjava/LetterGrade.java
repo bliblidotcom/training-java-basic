@@ -15,6 +15,8 @@ public class LetterGrade {
       grade = "C";
     } else if (nilai >= 40) {
       grade = "D";
+    } else if (nilai >= 25) {
+      grade = "E";
     } else {
       grade = "F";
     }
