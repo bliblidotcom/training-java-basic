@@ -21,7 +21,6 @@ public class TodoList {
     for (int i = 0; i < todoList.size(); i++) {
       if(todoList.get(i).equalsIgnoreCase(todoBefore)) {
         todoList.set(i, todoAfter);
-        todoList.remove(i);
       }
     }
   }
