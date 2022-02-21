@@ -1,0 +1,14 @@
+package com.gdn.onboarding.onboardingjava;
+
+import com.gdn.onboarding.onboardingjava.contracts.LetterGrade;
+
+public class LetterGradeImpl implements LetterGrade {
+    @Override
+    public char convert(int grade) {
+        if (grade > 90) return 'A';
+        else if (grade > 80) return 'B';
+        else if (grade > 70) return 'C';
+        else if (grade > 60) return 'D';
+        else return 'E';
+    }
+}
