@@ -1,5 +1,8 @@
 package com.blilbi.onboarding.javabasicassignment;
 
+import com.blilbi.onboarding.Factorial;
+import com.blilbi.onboarding.LetterGrade;
+import com.blilbi.onboarding.MonthCustomCalendar;
 import com.blilbi.onboarding.Todo;
 
 import org.springframework.boot.SpringApplication;
@@ -8,11 +11,30 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JavaBasicAssignmentApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		SpringApplication.run(JavaBasicAssignmentApplication.class, args);
+		
 		/*
-		Tugas Todo
-		*/
+		 * Tugas Letter Grade
+		 */
+		LetterGrade myScore = new LetterGrade(89);
+		System.out.println(myScore.getGrade());
+		
+		/*
+		 * Tugas Calendar
+		 */
+		MonthCustomCalendar myMonth = new MonthCustomCalendar(1);
+		System.out.println(myMonth.getMonth());
+
+		/*
+		 * Tugas Factorial
+		 */
+		Factorial myFactorial = new Factorial(6);
+		System.out.println(myFactorial.getFactorial());
+
+		/*
+		 * Tugas Todo
+		 */
 		Todo myTodo = new Todo();
 
 		myTodo.showTodoList(myTodo.getTodo());
