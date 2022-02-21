@@ -78,6 +78,10 @@ public class ToDoList {
     }
 
     public static void main(String[] args) {
+        toDoList.add("Welcoming Day");
+        toDoList.add("HR Bootcamp");
+        toDoList.add("FUTURE Bootcamp");
+
         Scanner scan = new Scanner(System.in);
         int num = 4;
         while (num != 0){

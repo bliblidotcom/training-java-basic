@@ -1,16 +1,17 @@
 package com.gdn.repotutorial.repotutorial;
 
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.logging.Logger;
-import org.junit.platform.commons.logging.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LetterGradeTest {
 
     @Test
     public void convertGradeTest() throws Exception{
+        Logger log = LoggerFactory.getLogger(Calendar.class);
         char result = new LetterGrade().convertGrade(90);
         if(result != 'A'){
-            System.out.println("Test Fail");
+            log.info("Test Fail");
             throw new Exception();
         }
     }
