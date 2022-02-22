@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    metode outdated, sebaiknya di hindari-->
+    <bean id="starwarsMovie" class="com.example.demo.StarwarsMovie"></bean>
+    <bean id="theaterApp" class="com.example.demo.TheaterApp">
+        <constructor-arg index="0" ref="starwarsMovie"></constructor-arg>
+    </bean>
+
+</beans>
