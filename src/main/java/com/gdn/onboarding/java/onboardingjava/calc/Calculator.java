@@ -1,7 +1,12 @@
 package com.gdn.onboarding.java.onboardingjava.calc;
 
-public class Calculator {
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
+public class Calculator {
+    public Calculator(){
+        log.debug("duar");
+    }
     public Integer add(Integer int1, Integer int2){
         if(int1 == null || int2 == null ){
             throw new IllegalArgumentException("param ga bole null");
