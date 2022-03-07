@@ -1,4 +1,4 @@
-package calc;
+package com.gdn.onboarding.java.two.calc;
 
 import com.gdn.onboarding.java.two.calc.Calculator;
 import org.junit.jupiter.api.Assertions;
