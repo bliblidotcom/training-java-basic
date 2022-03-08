@@ -1,0 +1,12 @@
+logging.level.org.springframework: debug
+junit.jupiter.execution.parallel.enabled: true
+
+spring:
+  devtools:
+    restart:
+      additional-paths: /src
+  config:
+    import: optional:file:env.properties
+
+server:
+  port: ${PORT:8080}
